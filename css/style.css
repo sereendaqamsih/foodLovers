@@ -1,0 +1,80 @@
+
+#myTable{
+    float: right;
+    width: 400px;
+    margin-right: 50px;
+    margin-top: 30px;
+    background-color:  rgba(255, 229, 72, 255);
+    border-radius: 5px;
+
+}
+#myForm{
+    float: left;
+    background-color:  rgba(255, 229, 72, 255);
+    margin-top: 30px;
+    border-radius: 5px;
+    width: 450px;
+    height: 300px;
+    margin-left: 50px;
+
+}
+table, tr, td {
+    border: 3px solid red;
+  }
+#navbar {
+    background-color:  rgba(255, 229, 72, 255);
+    padding: 5px;
+}
+body {
+    background-image: url('.../img/background.jpg');
+}
+#logo {
+    width: 100px;
+}
+h1{
+    margin-left:650px;
+    align-items: center;
+    font-size: 50px;
+    color: red;
+    font-weight:lighter;
+    font-family: 'Fredoka One', cursive;
+}
+#image1{
+    width: 40px;
+}
+input {
+    width: 25%;
+    border-radius: 5px;
+
+  }
+ #submit{
+     background-color: red;
+     border-radius: 5px;
+     width: 300px;
+     margin-top: 5px;
+     
+ }
+ input[type=text] {
+    padding:10px;
+    margin:10px;
+}
+
+    #thead{
+        border-color: red;
+        border: 1px solid red;
+
+    }
+    #foodType{
+        border-radius: 5px;
+        padding:10px;
+        width:300px ;
+
+    }
+    #footer{
+        
+margin-left: 700px;    }
+    footer{
+        background-color:  rgba(255, 229, 72, 255);
+        padding: 20px;
+        margin-top: 600px;
+    }
