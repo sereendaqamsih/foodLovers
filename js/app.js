@@ -19,8 +19,6 @@ function settingLocal (){
     localStorage.setItem('Order',data);
     let imageData = JSON.stringify(imageArr);
     localStorage.setItem('Image',imageData);
-
-
 }
 
 function gettingLocal (){
@@ -42,66 +40,46 @@ while ( table1.rows.length > 1) {
 
 
 for (let i = 0; i < orderArr.length; i++) {
+        let tr1= document.createElement('tr');
+        let td1 = document.createElement('td');
+        tbody1.appendChild(tr1);
+        tr1.appendChild(td1);
+        let td2 = document.createElement('td');
+        tr1.appendChild(td2);
+        let p1= document.createElement('p');
+        p1.setAttribute('id','image1');
+        td1.appendChild(p1);
+        let img1 = document.createElement("img");
+
     if ( orderArr[i].foodType ==='shawarma') {
-    let tr1= document.createElement('tr');
-    let td1 = document.createElement('td');
-    tbody1.appendChild(tr1);
-    tr1.appendChild(td1);
-    let td2 = document.createElement('td');
-    tr1.appendChild(td2);
-    let p1= document.createElement('p');
-    p1.setAttribute('id','image1');
-    td1.appendChild(p1);
-    let img1 = document.createElement("img");
     img1.src = "img/shawarma.jpg";
-    let src1 = document.getElementById("image1");
+   /* let src1 = document.getElementById("image1");
     src1.appendChild(img1);
-    p1.textContent=img1.src1;
+    p1.textContent=img1.src1;*/
  imageArr.push(img1.src1);
 
 td2.textContent= `Customer Name: ${orderArr[i].customerName} Food Type ${orderArr[i].foodType} Food Price ${orderArr[i].newPrice}`;
 }
 if ( orderArr[i].foodType ==='burger') {
-    let tr1= document.createElement('tr');
-    let td1 = document.createElement('td');
-    tbody1.appendChild(tr1);
-    tr1.appendChild(td1);
-    let td2 = document.createElement('td');
-    tr1.appendChild(td2);
-    let p1= document.createElement('p');
-    p1.setAttribute('id','image1');
-    td1.appendChild(p1);
-    let img1 = document.createElement("img");
+    
     img1.src = "img/burger.jpg";
-    let src1 = document.getElementById("image1");
-    src1.appendChild(img1);
-    p1.textContent=img1.src1;
-    imageArr.push(img1.src1);
-
    
-
-
+    imageArr.push(img1.src1);
+   
 td2.textContent= `Customer Name: ${orderArr[i].customerName} Food Type ${orderArr[i].foodType} Food Price ${orderArr[i].newPrice}`;
 }
 if ( orderArr[i].foodType ==='pizza') {
-    let tr1= document.createElement('tr');
-    let td1 = document.createElement('td');
-    tbody1.appendChild(tr1);
-    tr1.appendChild(td1);
-    let td2 = document.createElement('td');
-    tr1.appendChild(td2);
-    let p1= document.createElement('p');
-    p1.setAttribute('id','image1');
-    td1.appendChild(p1);
-    let img1 = document.createElement("img");
+   
     img1.src = "img/pizza.jpg";
-    let src1 = document.getElementById("image1");
+    /*let src1 = document.getElementById("image1");
     src1.appendChild(img1);
-    p1.textContent=img1.src1;
+    p1.textContent=img1.src1;*/
 td2.textContent= `Customer Name: ${orderArr[i].customerName} Food Type ${orderArr[i].foodType} Food Price ${orderArr[i].newPrice}`;
 imageArr.push(img1.src1);
 }
-
+let src1 = document.getElementById("image1");
+src1.appendChild(img1);
+p1.textContent=img1.src1;
 }}
 
 

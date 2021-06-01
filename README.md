@@ -1,2 +1,2 @@
-# foodLovers
-Sereen Daqamsih
+# tryfoodLovers
+Sereen
